@@ -26,7 +26,7 @@ class SignIn():
     def first_factor_auth_phone(self):
         self.driver.get(SignIn.url)
         time.sleep(2)
-        self.driver.set_window_size(1920, 1057)
+        self.driver.set_window_size(1280, 800)
         self.driver.find_element(By.ID, "authPhone").send_keys(SignIn.phone)
         self.driver.find_element(By.NAME, "phone_password").send_keys(SignIn.password)
         self.driver.find_element(By.CSS_SELECTOR, "div:nth-child(3) .form__submit-button").click()
@@ -34,7 +34,7 @@ class SignIn():
     def first_factor_auth_card(self):
         self.driver.get(SignIn.url)
         time.sleep(1)
-        self.driver.set_window_size(1920, 1057)
+        self.driver.set_window_size(1280, 800)
         self.driver.find_element(By.CSS_SELECTOR, ".tabs__item:nth-child(2) > .tabs__item-name").click()
         self.driver.find_element(By.ID, "authCard").send_keys(SignIn.card)
         self.driver.find_element(By.NAME, "cardNo_password").send_keys(SignIn.password)
