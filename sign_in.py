@@ -3,8 +3,8 @@ import requests
 
 
 class SignIn:
-    card = "7789004125415905"
-    password = "5ka5ka"
+    card = "7789004922000462"
+    password = "Qqwerty123"
     url = "https://mystage.5ka.ru/api/v1/auth/signin"
 
     body = {
